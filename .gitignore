@@ -1,0 +1,7 @@
+*.dat
+auto-save-list/
+elpa/archives
+history
+ido.last
+network-security.data
+smex-items
