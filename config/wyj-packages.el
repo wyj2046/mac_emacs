@@ -52,20 +52,25 @@ the mode-line."
 
 
 ;;smex
-(require 'smex)
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(smex-auto-update 60)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;; (require 'smex)
+;; (smex-initialize)
+;; (global-set-key (kbd "M-x") 'smex)
+;; (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; (smex-auto-update 60)
+;; ;; This is your old M-x.
+;; (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 
 ;; auto-complete(神器!)
-(require 'auto-complete-config)
-;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20131128.233/dict")
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-*/dict")
-(ac-config-default)
+;; (require 'auto-complete-config)
+;; ;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20131128.233/dict")
+;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-*/dict")
+;; (ac-config-default)
+
+;; company
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+(setq company-backends (delete 'company-semantic company-backends))
 
 
 ;; expand-region
@@ -184,3 +189,8 @@ the mode-line."
                     'php-mode-hook
                     ))
   (add-hook hook 'hideshowvis-enable))
+
+
+;; sr-speedbar
+(require 'sr-speedbar)
+(global-set-key (kbd "C-c t") 'sr-speedbar-toggle)
