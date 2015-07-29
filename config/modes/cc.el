@@ -4,3 +4,5 @@
 (require 'cc-mode)
 (define-key c-mode-map  [(tab)] 'company-complete)
 (define-key c++-mode-map  [(tab)] 'company-complete)
+
+(add-hook 'c-mode-common-hook   'hs-minor-mode)

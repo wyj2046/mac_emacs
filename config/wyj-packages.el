@@ -185,6 +185,7 @@ the mode-line."
   "Will indicate regions foldable with hideshow in the fringe."
   'interactive)
 (dolist (hook (list 'emacs-lisp-mode-hook
+		    'c-mode-hook
                     'c++-mode-hook
                     'php-mode-hook
                     ))
