@@ -50,6 +50,7 @@ mac环境下的emacs配置
     brew install global
 
 elpy安装的package
+
     company-c-headers
     ws-butler
     dtrt-indent
