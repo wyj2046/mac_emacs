@@ -199,3 +199,7 @@ the mode-line."
 
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+
+;; nyan-mode
+(nyan-mode 1)
