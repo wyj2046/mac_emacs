@@ -20,6 +20,7 @@ mac环境下的emacs配置
 - window-number
 - yasnippet
 - tabbar
+- flycheck
 
 # mode
 ## python mode
