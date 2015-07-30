@@ -195,3 +195,7 @@ the mode-line."
 ;; sr-speedbar
 (require 'sr-speedbar)
 (global-set-key (kbd "C-c t") 'sr-speedbar-toggle)
+
+
+;; flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
