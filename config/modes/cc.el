@@ -3,6 +3,7 @@
 (add-to-list 'load-path "~/.emacs.d/config/modes/c_ide")
 (require 'setup-helm-gtags)
 (require 'setup-editing)
+(require 'setup-cedet)
 
 ;; company
 (require 'cc-mode)
