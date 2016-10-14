@@ -31,7 +31,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (protobuf-mode markdown-mode matlab-mode flycheck company-c-headers ws-butler dtrt-indent clean-aindent-mode volatile-highlights sr-speedbar function-args helm-gtags helm-swoop helm nyan-mode go-mode exec-path-from-shell elpy color-theme-sanityinc-tomorrow auto-complete hideshowvis mark-multiple autopair paredit ace-jump-mode wrap-region undo-tree highlight-symbol expand-region smex window-number yasnippet tabbar))))
+    (es-mode protobuf-mode markdown-mode matlab-mode flycheck company-c-headers ws-butler dtrt-indent clean-aindent-mode volatile-highlights sr-speedbar function-args helm-gtags helm-swoop helm nyan-mode go-mode exec-path-from-shell elpy color-theme-sanityinc-tomorrow auto-complete hideshowvis mark-multiple autopair paredit ace-jump-mode wrap-region undo-tree highlight-symbol expand-region smex window-number yasnippet tabbar))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
